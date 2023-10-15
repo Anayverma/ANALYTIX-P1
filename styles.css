@@ -1,0 +1,17 @@
+body{
+    background: black;
+}
+.gradient-text {
+    background: yellow; /* Set the background color to black */
+    color: transparent; /* Make the text transparent */
+    font-size: 48px; /* Adjust the font size as needed */
+    display: inline-block; /* Ensure the gradient applies only to the text */
+    /* Create a gradient text effect */
+    background-image: linear-gradient(45deg, #ff00cc, #00ffcc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 5;
+}
+

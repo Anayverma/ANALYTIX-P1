@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Data Analytics for Mobile Phones</title>
+</head>
+<body>
+    <h1>Data Analytics for Mobile Phones</h1>
+    <form action="/filter" method="post">
+        <label for="n">Select the number of companies:</label>
+        <input type="number" id="n" name="n" min="1" max="15" required>
+        <br>
+        <label for="budget">Select budget range:</label>
+        <select id="budget" name="budget">
+            <option value="1000-10000">₹1000-10000</option>
+            <option value="10000-20000">₹10000-20000</option>
+            <option value="20000-30000">₹20000-30000</option>
+            <option value="30000-40000">₹30000-40000</option>
+            <option value="40000-50000">₹40000-50000</option>
+
+            <!-- Add more budget options as needed -->
+        </select>
+        <br>
+        <input type="submit" value="Filter">
+    </form>
+</body>
+</html>
